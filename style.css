@@ -1,3 +1,4 @@
+/* Base styles */
 .container {
     position: relative;
 }
@@ -8,7 +9,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-
 }
 
 button {
@@ -29,53 +29,55 @@ button {
 img {
     width: 300px;
     height: 300px;
-    margin-top: 100px;
+    margin-top: 70px;
     border: 3px solid #DE0000;
     border-radius: 50%;
-
 }
 
 h2 {
     color: #FF4545;
-    border-width: 5px;
     border: #DE0000 solid 2px;
     background-color: #212121;
     font-weight: bolder;
     font-size: x-large;
     border-radius: 5px;
-    margin-right: 600px;
-    margin-left: 600px;
-
+    margin: 0 auto;
+    width: calc(100% - 1200px);
+    max-width: 100%;
 }
 
 h3 {
     color: #FF4545;
-    border-width: 5px;
     border: #DE0000 solid 2px;
     background-color: #212121;
     font-weight: bolder;
     font-size: x-large;
     border-radius: 5px;
-    margin-right: 500px;
-    margin-left: 500px;
-    margin-top: 15px;
+    margin: 15px auto;
     padding: 4px;
-
-
+    width: calc(100% - 1000px);
+    max-width: 100%;
 }
 
 h4 {
     text-align: center;
     color: #FF4545;
+    font-size: 24px; /* Default size for small screens */
 }
+
+p{
+    text-align: center;
+    color: #FF4545;
+    font-size: 24px; /* Default size for small screens */
+}
+
 
 .icons {
     border: none;
     height: 100px;
     width: 100px;
-    padding: 0px;
-    margin: 0px;
-
+    padding: 0;
+    margin: 0;
 }
 
 .divback {
@@ -83,24 +85,21 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-    gap: 163px;
-    background-color: #212121;
-    height: 600px;
-    width: 1440px;
+    gap: 20px;
     border-radius: 10px;
-    flex-wrap: wrap;
+    background-color: initial; /* Default to no specific background color */
+    background-color: #212121;
 }
 
 .divbackf {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    gap: 250px;
-    background-color: #212121;
-    height: 600px;
-    width: 1440px;
+    align-content: space-around;
+    gap: 30px;
     border-radius: 10px;
+    background-color: initial; /* Default to no specific background color */
+    background-color: #212121;
 }
 
 .bg {
@@ -114,12 +113,6 @@ h4 {
     gap: 50px;
 }
 
-.vgi {
-    border: none;
-    border-radius: 0px;
-    height: 240px;
-    width: 240px;
-}
 ul{
     list-style: circle;
     
@@ -128,4 +121,114 @@ li{
     color: #FF4545;
     top: 10px;
 
+}
+
+.vgi {
+    border: none;
+    border-radius: 0px;
+    height: auto;
+    width: 240px;
+}
+
+/* Large devices (min-width: 768px) */
+@media (min-width: 768px) {
+    .icons {
+        height: 350px;
+        width: auto;
+    }
+
+    h4 {
+        font-size: 32px;
+    }
+
+    .divback {
+        gap: 110px;
+        width: auto;
+        height: 3410px;
+        justify-content: center;
+        background-color:#212121 /* Override base background-color */
+        
+    }
+
+    .bg {
+        padding: 20px;
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+        display: flex;
+        align-items:flex-start;
+        gap: 170px;
+    }
+}
+
+/* Extra large devices (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .icons {
+        height: 150px;
+        width: auto;
+    }
+
+    h4 {
+        font-size: 26px;
+    }
+
+    .divback {
+        gap: 140px;
+        height: 880px;
+        width: auto;
+        
+         /* Override base background-color */
+    }
+
+    .divbackf {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        gap: 30px;
+        border-radius: 10px;
+        background-color: initial; /* Default to no specific background color */
+        background-color: #212121;
+    }
+
+    .bg {
+        padding: 20px;
+        background-color: #212121;
+        height: 630px;
+        width: auto;
+        border-radius: 10px;
+        display: flex;
+        align-items:flex-start;
+        gap: 170px;
+    }
+}
+
+.Tul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #212121;
+    border-radius: 10px;
+
+}
+
+.Tli {
+    float: left;
+    background-color: #212121;
+
+
+}
+
+.Tli a {
+    display: block;
+    color: #FF4545;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.Tli a:hover {
+    background-color: #131313;
+    color: #b10000;
 }
