@@ -150,15 +150,7 @@ li{
         
     }
 
-    .bg {
-        padding: 20px;
-        width: 500px;
-        height: auto;
-        border-radius: 10px;
-        display: flex;
-        align-items:flex-start;
-        gap: 170px;
-    }
+    
 }
 
 /* Extra large devices (min-width: 1024px) */
@@ -174,7 +166,7 @@ li{
 
     .divback {
         gap: 140px;
-        height: 880px;
+        height: 1120px;
         width: auto;
         
          /* Override base background-color */
@@ -191,16 +183,7 @@ li{
         background-color: #212121;
     }
 
-    .bg {
-        padding: 20px;
-        background-color: #212121;
-        height: 630px;
-        width: auto;
-        border-radius: 10px;
-        display: flex;
-        align-items:flex-start;
-        gap: 170px;
-    }
+    
 }
 
 .Tul {
